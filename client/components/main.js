@@ -35,6 +35,21 @@ const Main = (props) => {
             <img src="https://www.dualshockers.com/wp-content/uploads/2017/10/CoD-WWII.png" />
         </div>
       </Carousel>
+      <div className="description">
+        <p>This is where the description will go. Until I decide what I want to put here, it will be this 
+        random text, in order to see what it will look like.</p>
+      </div>
+      <div className="consoles">
+        <div className="console">
+          <img className="console-pic" src="https://compass-ssl.xbox.com/assets/e5/4a/e54a08ff-38e4-45a7-be4c-50fe5e92564b.jpg?n=Xbox_Family_Image-0_PS_496x279.jpg" />
+        </div>
+        <div className="console">
+          <p>test</p>
+        </div>
+        <div className="console">
+          <p>test</p>
+        </div>
+      </div>
     </div>
   )
 }

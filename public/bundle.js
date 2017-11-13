@@ -7252,6 +7252,42 @@ var Main = function Main(props) {
         null,
         _react2.default.createElement('img', { src: 'https://www.dualshockers.com/wp-content/uploads/2017/10/CoD-WWII.png' })
       )
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'description' },
+      _react2.default.createElement(
+        'p',
+        null,
+        'This is where the description will go. Until I decide what I want to put here, it will be this random text, in order to see what it will look like.'
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'consoles' },
+      _react2.default.createElement(
+        'div',
+        { className: 'console' },
+        _react2.default.createElement('img', { className: 'console-pic', src: 'https://compass-ssl.xbox.com/assets/e5/4a/e54a08ff-38e4-45a7-be4c-50fe5e92564b.jpg?n=Xbox_Family_Image-0_PS_496x279.jpg' })
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'console' },
+        _react2.default.createElement(
+          'p',
+          null,
+          'test'
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'console' },
+        _react2.default.createElement(
+          'p',
+          null,
+          'test'
+        )
+      )
     )
   );
 };
@@ -7486,7 +7522,7 @@ exports = module.exports = __webpack_require__(35)();
 
 
 // module
-exports.push([module.i, "body {\n  font-family: sans-serif; }\n  body a {\n    text-decoration: none; }\n  body label {\n    display: block; }\n  body nav a {\n    display: inline-block;\n    margin: 1em; }\n  body form div {\n    margin: 1em;\n    display: inline-block; }\n  body .title {\n    text-align: center; }\n", ""]);
+exports.push([module.i, "body {\n  font-family: sans-serif;\n  background-image: url(\"https://i.ytimg.com/vi/_OjPCcbmWj8/maxresdefault.jpg\"); }\n  body a {\n    text-decoration: none; }\n  body label {\n    display: block; }\n  body nav a {\n    display: inline-block;\n    margin: 1em; }\n  body form div {\n    margin: 1em;\n    display: inline-block; }\n  body .title {\n    text-align: center;\n    color: white; }\n  body .description {\n    background-color: gray;\n    border-radius: 5px; }\n  body .console {\n    float: left;\n    margin: 1.858736059%;\n    width: 29.615861214%; }\n  body .console-pic {\n    max-width: 33%;\n    max-height: 50%; }\n", ""]);
 
 // exports
 
