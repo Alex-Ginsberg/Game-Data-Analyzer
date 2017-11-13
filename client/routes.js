@@ -4,7 +4,7 @@ import {Router} from 'react-router'
 import {Route, Switch} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import history from './history'
-import {Main} from './components'
+import {Main, SingleConsole} from './components'
 
 /**
  * COMPONENT
@@ -15,7 +15,8 @@ class Routes extends Component {
     return (
       <Router history={history}>
           <Switch>
-            <Route path="/" component={Main} />
+            <Route exact path="/" component={Main} />
+            <Route path="/console/:name" component={SingleConsole} />
           </Switch>
       </Router>
     )

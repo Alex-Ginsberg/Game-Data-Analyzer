@@ -41,13 +41,16 @@ const Main = (props) => {
       </div>
       <div className="consoles">
         <div className="console">
-          <img className="console-pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Xbox_logo_2012_cropped.svg/2000px-Xbox_logo_2012_cropped.svg.png" />
+          <img className="console-pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Xbox_logo_2012_cropped.svg/2000px-Xbox_logo_2012_cropped.svg.png" 
+           onClick={() => props.history.push('/console/xboxone')} />
         </div>
         <div className="console">
-          <img className="console-pic-switch" src="https://vignette.wikia.nocookie.net/logopedia/images/6/62/Nintendo-switch-logo-587x330.png/revision/latest?cb=20161022062931" />
+          <img className="console-pic-switch" src="https://vignette.wikia.nocookie.net/logopedia/images/6/62/Nintendo-switch-logo-587x330.png/revision/latest?cb=20161022062931" 
+           onClick={() => props.history.push('/console/switch')}/>
         </div>
         <div className="console">
-          <img className="console-pic" src="http://moziru.com/images/logo-clipart-ps4-9.jpg" />
+          <img className="console-pic" src="http://moziru.com/images/logo-clipart-ps4-9.jpg" 
+           onClick={() => props.history.push('/console/ps4')}/>
         </div>
       </div>
     </div>
