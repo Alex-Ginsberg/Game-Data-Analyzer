@@ -6216,7 +6216,8 @@ var Routes = function (_Component) {
         _react2.default.createElement(
           _reactRouterDom.Switch,
           null,
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _components.Main })
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _components.Main }),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/console/:name', component: _components.SingleConsole })
         )
       );
     }
@@ -7178,6 +7179,15 @@ Object.defineProperty(exports, 'Main', {
   }
 });
 
+var _SingleConsole = __webpack_require__(170);
+
+Object.defineProperty(exports, 'SingleConsole', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_SingleConsole).default;
+  }
+});
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
@@ -7268,17 +7278,26 @@ var Main = function Main(props) {
       _react2.default.createElement(
         'div',
         { className: 'console' },
-        _react2.default.createElement('img', { className: 'console-pic', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Xbox_logo_2012_cropped.svg/2000px-Xbox_logo_2012_cropped.svg.png' })
+        _react2.default.createElement('img', { className: 'console-pic', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Xbox_logo_2012_cropped.svg/2000px-Xbox_logo_2012_cropped.svg.png',
+          onClick: function onClick() {
+            return props.history.push('/console/xboxone');
+          } })
       ),
       _react2.default.createElement(
         'div',
         { className: 'console' },
-        _react2.default.createElement('img', { className: 'console-pic-switch', src: 'https://vignette.wikia.nocookie.net/logopedia/images/6/62/Nintendo-switch-logo-587x330.png/revision/latest?cb=20161022062931' })
+        _react2.default.createElement('img', { className: 'console-pic-switch', src: 'https://vignette.wikia.nocookie.net/logopedia/images/6/62/Nintendo-switch-logo-587x330.png/revision/latest?cb=20161022062931',
+          onClick: function onClick() {
+            return props.history.push('/console/switch');
+          } })
       ),
       _react2.default.createElement(
         'div',
         { className: 'console' },
-        _react2.default.createElement('img', { className: 'console-pic', src: 'http://moziru.com/images/logo-clipart-ps4-9.jpg' })
+        _react2.default.createElement('img', { className: 'console-pic', src: 'http://moziru.com/images/logo-clipart-ps4-9.jpg',
+          onClick: function onClick() {
+            return props.history.push('/console/ps4');
+          } })
       )
     )
   );
@@ -30510,6 +30529,57 @@ module.exports = function(module) {
 	return module;
 };
 
+
+/***/ }),
+/* 170 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRedux = __webpack_require__(16);
+
+var _reactRouterDom = __webpack_require__(59);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SingleConsole = function (_React$Component) {
+    _inherits(SingleConsole, _React$Component);
+
+    function SingleConsole(props) {
+        _classCallCheck(this, SingleConsole);
+
+        return _possibleConstructorReturn(this, (SingleConsole.__proto__ || Object.getPrototypeOf(SingleConsole)).call(this, props));
+    }
+
+    _createClass(SingleConsole, [{
+        key: 'render',
+        value: function render() {
+            console.log(this.props.match.params.name);
+            return _react2.default.createElement('div', null);
+        }
+    }]);
+
+    return SingleConsole;
+}(_react2.default.Component);
+
+exports.default = SingleConsole;
 
 /***/ })
 /******/ ]);

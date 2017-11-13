@@ -4,4 +4,4 @@
  * having to figure out which file they belong to!
  */
 export {default as Main} from './main'
-
+export {default as SingleConsole} from './SingleConsole'
