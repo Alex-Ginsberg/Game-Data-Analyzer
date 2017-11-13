@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  background-image: url("https://i.ytimg.com/vi/_OjPCcbmWj8/maxresdefault.jpg");
 
   a {
     text-decoration: none;
@@ -17,5 +18,26 @@ body {
   form div {
     margin: 1em;
     display: inline-block;
+  }
+
+  .title {
+    text-align: center;
+    color: white;
+  }
+
+  .description {
+    background-color: gray;
+    border-radius: 5px;
+  }
+
+  .console {
+    float: left;
+    margin: 1.858736059%;
+    width: 29.615861214%;
+  }
+
+  .console-pic {
+    max-width: 33%;
+    max-height: 50%;
   }
 }

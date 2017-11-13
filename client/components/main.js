@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {withRouter, Link} from 'react-router-dom'
+import { Carousel } from 'react-responsive-carousel'
+import styles from 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 
 /**
@@ -11,10 +13,43 @@ import {withRouter, Link} from 'react-router-dom'
  *  rendered out by the component's `children`.
  */
 const Main = (props) => {
-
   return (
     <div>
-      <h1>BOILERMAKER</h1>
+      <h1 className="title">Pending Title Here</h1>
+      <Carousel
+      showArrows={false}
+      showStatus={false}
+      showIndicators={false}
+      showThumbs={false}
+      infiniteLoop={true}
+      autoPlay={true}
+      interval={7000}
+      transitionTime={1000}>
+        <div>
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2017/09/Assassins-Creed-Origins-skills.jpg"/>
+        </div>
+        <div>
+            <img src="http://www.justpushstart.com/wp-content/uploads/2017/06/NSwitch_SuperMarioOdyssey_05_mediaplayer_large.jpg" />
+        </div>
+        <div>
+            <img src="https://www.dualshockers.com/wp-content/uploads/2017/10/CoD-WWII.png" />
+        </div>
+      </Carousel>
+      <div className="description">
+        <p>This is where the description will go. Until I decide what I want to put here, it will be this 
+        random text, in order to see what it will look like.</p>
+      </div>
+      <div className="consoles">
+        <div className="console">
+          <img className="console-pic" src="https://compass-ssl.xbox.com/assets/e5/4a/e54a08ff-38e4-45a7-be4c-50fe5e92564b.jpg?n=Xbox_Family_Image-0_PS_496x279.jpg" />
+        </div>
+        <div className="console">
+          <p>test</p>
+        </div>
+        <div className="console">
+          <p>test</p>
+        </div>
+      </div>
     </div>
   )
 }
