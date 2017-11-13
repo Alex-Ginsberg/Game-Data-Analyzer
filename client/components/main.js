@@ -41,13 +41,13 @@ const Main = (props) => {
       </div>
       <div className="consoles">
         <div className="console">
-          <img className="console-pic" src="https://compass-ssl.xbox.com/assets/e5/4a/e54a08ff-38e4-45a7-be4c-50fe5e92564b.jpg?n=Xbox_Family_Image-0_PS_496x279.jpg" />
+          <img className="console-pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Xbox_logo_2012_cropped.svg/2000px-Xbox_logo_2012_cropped.svg.png" />
         </div>
         <div className="console">
-          <p>test</p>
+          <img className="console-pic-switch" src="https://vignette.wikia.nocookie.net/logopedia/images/6/62/Nintendo-switch-logo-587x330.png/revision/latest?cb=20161022062931" />
         </div>
         <div className="console">
-          <p>test</p>
+          <img className="console-pic" src="http://moziru.com/images/logo-clipart-ps4-9.jpg" />
         </div>
       </div>
     </div>

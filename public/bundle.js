@@ -7268,25 +7268,17 @@ var Main = function Main(props) {
       _react2.default.createElement(
         'div',
         { className: 'console' },
-        _react2.default.createElement('img', { className: 'console-pic', src: 'https://compass-ssl.xbox.com/assets/e5/4a/e54a08ff-38e4-45a7-be4c-50fe5e92564b.jpg?n=Xbox_Family_Image-0_PS_496x279.jpg' })
+        _react2.default.createElement('img', { className: 'console-pic', src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Xbox_logo_2012_cropped.svg/2000px-Xbox_logo_2012_cropped.svg.png' })
       ),
       _react2.default.createElement(
         'div',
         { className: 'console' },
-        _react2.default.createElement(
-          'p',
-          null,
-          'test'
-        )
+        _react2.default.createElement('img', { className: 'console-pic-switch', src: 'https://vignette.wikia.nocookie.net/logopedia/images/6/62/Nintendo-switch-logo-587x330.png/revision/latest?cb=20161022062931' })
       ),
       _react2.default.createElement(
         'div',
         { className: 'console' },
-        _react2.default.createElement(
-          'p',
-          null,
-          'test'
-        )
+        _react2.default.createElement('img', { className: 'console-pic', src: 'http://moziru.com/images/logo-clipart-ps4-9.jpg' })
       )
     )
   );
@@ -7522,7 +7514,7 @@ exports = module.exports = __webpack_require__(35)();
 
 
 // module
-exports.push([module.i, "body {\n  font-family: sans-serif;\n  background-image: url(\"https://i.ytimg.com/vi/_OjPCcbmWj8/maxresdefault.jpg\"); }\n  body a {\n    text-decoration: none; }\n  body label {\n    display: block; }\n  body nav a {\n    display: inline-block;\n    margin: 1em; }\n  body form div {\n    margin: 1em;\n    display: inline-block; }\n  body .title {\n    text-align: center;\n    color: white; }\n  body .description {\n    background-color: gray;\n    border-radius: 5px; }\n  body .console {\n    float: left;\n    margin: 1.858736059%;\n    width: 29.615861214%; }\n  body .console-pic {\n    max-width: 33%;\n    max-height: 50%; }\n", ""]);
+exports.push([module.i, "body {\n  font-family: sans-serif;\n  background-image: url(\"https://i.ytimg.com/vi/_OjPCcbmWj8/maxresdefault.jpg\"); }\n  body a {\n    text-decoration: none; }\n  body label {\n    display: block; }\n  body nav a {\n    display: inline-block;\n    margin: 1em; }\n  body form div {\n    margin: 1em;\n    display: inline-block; }\n  body .title {\n    text-align: center;\n    color: white; }\n  body .description {\n    background-color: gray;\n    border-radius: 5px;\n    position: relative;\n    bottom: 50px; }\n  body .console-pic {\n    max-width: 20%;\n    max-height: 50%; }\n  body .console-pic-switch {\n    position: relative;\n    right: 50px; }\n", ""]);
 
 // exports
 

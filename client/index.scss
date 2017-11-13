@@ -28,16 +28,17 @@ body {
   .description {
     background-color: gray;
     border-radius: 5px;
-  }
-
-  .console {
-    float: left;
-    margin: 1.858736059%;
-    width: 29.615861214%;
+    position: relative;
+    bottom: 50px;
   }
 
   .console-pic {
-    max-width: 33%;
+    max-width: 20%;
     max-height: 50%;
+  }
+
+  .console-pic-switch {
+    position: relative;
+    right: 50px;
   }
 }
